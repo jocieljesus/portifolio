@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1.1rem;
+}
+body{
+    
+    background-color: #F9F9FF;
+}
+
+header{
+   background-color: #e9e9f9;
+   height: 8vh;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 80px;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+
+a{
+    text-decoration: none;
+    color: #464554;
+}
+
+.logo{
+    font-weight: 700;
+}
+
+.simbolo-logo{
+
+    color: #4338CA;
+}
+
+.icone-login i{
+    color: #4338CA;
+    font-size: 2rem;
+    margin-left: 15px;
+}
+
+main{
+    padding:  50px 150px; 
+}
+
+
+h1 {
+    font-size: 4rem;
+}
+
+.area-inicio{
+    display: flex;
+    gap: 10vw;
+}
+
+.area-imagem{
+    width: 30vw;
+    border-radius: 15px;
+    box-shadow: 0 0 20px #4338CA;
+
+}
+
+.nome-destaque{
+    font-size: 4rem;
+    color: #4338CA;
+}
+
+.botoes-iniciais{
+    margin: 50px 0px;
+}
+
+.btn-ver-projetos{
+    background-color: #4338CA;
+    color: #FFF;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.btn-github{
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #4338CA;
+}
