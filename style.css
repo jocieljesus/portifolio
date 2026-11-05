@@ -1,4 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Grotesk:wght@300..700&display=swap');
+
+:root{
+
+    --cor-principal: #F9F9FF;
+    --cor-fundo: #FFFFFF;
+    --cor-header: #E9E9F9;
+    --cor-texto-principal:  #464554;
+    --cor-titulo-principal: #000000;
+    --cor-secundaria: #4338CA;
+    --cor-fundo-icone: #DEE8FF;
+    --cor-cofirmacao: #006A61;
+}
 
 *{
     margin: 0;
@@ -9,13 +21,14 @@
     font-style: normal;
     font-size: 1.1rem;
 }
+
 body{
     
-    background-color: #F9F9FF;
+    background-color: var(--cor-principal)
 }
 
 header{
-   background-color: #e9e9f9;
+   background-color: var(--cor-header);
    height: 8vh;
    display: flex;
    justify-content: space-between;
@@ -29,10 +42,9 @@ ul{
     gap: 40px;
 }
 
-
 a{
     text-decoration: none;
-    color: #464554;
+    color: var(--cor-texto-principal);
 }
 
 .logo{
@@ -40,40 +52,45 @@ a{
 }
 
 .simbolo-logo{
-
-    color: #4338CA;
+    color: var(--cor-secundaria);
 }
 
 .icone-login i{
-    color: #4338CA;
+    color: var(--cor-secundaria);
     font-size: 2rem;
     margin-left: 15px;
 }
 
 main{
-    padding:  50px 150px; 
+    background-color: var(--cor-principal);
+    padding: 100px 200px ;
 }
 
 
 h1 {
     font-size: 4rem;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: 800;
 }
+
 
 .area-inicio{
     display: flex;
-    gap: 10vw;
+    gap: 2vw;
+}
+.area-texto p {
+    font-size: 1.3rem;
 }
 
 .area-imagem{
     width: 30vw;
     border-radius: 15px;
-    box-shadow: 0 0 20px #4338CA;
-
+    box-shadow: 0 0 20px var(--cor-secundaria);
 }
 
 .nome-destaque{
     font-size: 4rem;
-    color: #4338CA;
+    color: var(--cor-secundaria);
 }
 
 .botoes-iniciais{
@@ -81,8 +98,8 @@ h1 {
 }
 
 .btn-ver-projetos{
-    background-color: #4338CA;
-    color: #FFF;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-fundo);
     padding: 15px;
     border-radius: 10px;
     margin-right: 20px;
@@ -91,5 +108,123 @@ h1 {
 .btn-github{
     padding: 15px;
     border-radius: 10px;
-    border: 1px solid #4338CA;
+    background-color: var(--cor-fundo);
+    box-shadow: 0 0 4px var(--cor-secundaria);
 }
+
+p {
+    color: var(--cor-texto-principal);
+}
+
+.card-foco{
+    background-color: var(--cor-fundo);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+    box-shadow: 0 0 10px var(--cor-secundaria);
+}
+
+.card-foco i, span{
+    color: var(--cor-secundaria);
+    font-weight: 700;
+}
+
+
+.card-foco p {
+    margin-bottom: 10px;
+}
+
+.icone-foco{
+    background-color: var(--cor-fundo-icone);
+    padding: 15px;
+    height: 55px;
+    border-radius: 10px;
+}
+
+.minha-jornada{
+    margin-top: 100px;
+}
+
+.titulo-minha-jornada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;  
+}
+
+.titulo-minha-jornada span{
+    background-color: var(--cor-fundo-icone);
+    padding: 10px 30px;
+    border-radius: 20px;
+}
+
+
+.titulo-minha-jornada h2{
+    font-size: 2.5rem;
+}
+
+.titulo-minha-jornada p{
+    font-size: 1.3rem;
+}
+
+.cards{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-html{
+    background-color: var(--cor-fundo);
+    padding: 30px;
+    max-width: 30%;
+    border-radius: 15px;
+}
+
+
+.topo-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.icon-html{
+    background-color: var(--cor-fundo-icone);
+    padding: 20px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+}
+
+.fase-1{
+    background-color: var(--cor-fundo-icone);
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--cor-texto-principal);
+    font-weight: 500;
+}
+
+.card-html h3{
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.card-html p {
+    color: var(--cor-texto-principal);
+    font-size: 1rem;
+}
+
+.barra-card{
+    color: var(--cor-cofirmacao);
+    margin-top: 50px;
+}
+
+.barra-card span{
+    color: var(--cor-cofirmacao);
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+
+
