@@ -593,3 +593,161 @@ footer{
 #contato{
     scroll-margin-top:100px;
 }
+
+/* =========================================
+   RESPONSIVIDADE (TABLETS E MOBILE)
+   ========================================= */
+
+/* Ajustes para Tablets e telas menores que 992px */
+@media (max-width: 992px) {
+    main {
+        padding: 100px 50px; /* Reduz o padding lateral gigante */
+    }
+    .area-inicio {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .imagem-principal {
+        width: 80%;
+        max-width: 500px;
+        margin-top: 40px;
+    }
+    .botoes-iniciais {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+    .btn-ver-projetos {
+        margin-right: 0;
+        width: 100%;
+        max-width: 300px;
+    }
+    .btn-github {
+        width: 100%;
+        max-width: 300px;
+    }
+    .card-foco {
+        text-align: left;
+    }
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    .card-html {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+    }
+    .area-imagem span {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .ferramentas {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .area-contatos {
+        flex-direction: column;
+        gap: 30px;
+        align-items: center;
+    }
+    .card-contato {
+        margin-right: 0;
+    }
+}
+
+
+/* Esconde o botão no desktop (coloque fora do media query) */
+#btn-menu {
+    display: none;
+    font-size: 2rem;
+    color: var(--cor-secundaria);
+    cursor: pointer;
+}
+
+/* Substitua apenas o bloco de Smartphones (telas até 768px) */
+@media (max-width: 768px) {
+    header {
+        height: 8vh;
+        padding: 0 20px;
+        position: fixed; /* Mantém o cabeçalho fixo no topo */
+        z-index: 1000;
+        background-color: var(--cor-header);
+    }
+    
+    #btn-menu {
+        display: block; /* Mostra o ícone no mobile */
+    }
+
+    .icone-login {
+        display: none; /* Oculta no mobile para focar no menu */
+    }
+
+    /* Oculta o menu jogando ele para a esquerda */
+    nav {
+        position: absolute;
+        top: 8vh;
+        left: -100%; 
+        width: 100%;
+        height: 92vh;
+        background-color: var(--cor-header);
+        transition: left 0.4s ease;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        padding-top: 50px;
+    }
+
+    /* O JS vai adicionar essa classe para mostrar o menu */
+    nav.menu-aberto {
+        left: 0; 
+    }
+
+    ul {
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    main {
+        padding: 40px 20px;
+    }
+    h1, .nome-destaque {
+        font-size: 2.5rem;
+    }
+    .area-reflexao {
+        width: 100%;
+        padding: 30px 20px;
+    }
+    .area-reflexao h3 {
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    .vamos-conversar {
+        width: 100%;
+        padding: 40px 20px;
+    }
+    .vamos-conversar > p {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    .barra-card-demo {
+        flex-direction: column;
+        gap: 15px;
+    }
+    #demo-ao-vivo {
+        margin-right: 0;
+    }
+    footer {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+
