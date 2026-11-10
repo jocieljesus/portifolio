@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.css" integrity="sha512-x9WwyMYBnlXMNQ6kQ/Lyzu1NqIhLQKL5Oq6xByfXuRj7s9CskyCbLv/1IjqzJmXwFXWr0ov6jBV7Qbc0hh9nHg==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=devices" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css">
     <title>Portfólio do Jociel</title>
 </head>
@@ -30,7 +30,7 @@
         </div>
     </header>
 
-    <main>     
+    <main id="inicio">     
         <section class="area-inicio">
             <div class="area-texto">
                 <h1>Olá Mundo! Sou o <span class="nome-destaque">Jociel</span>, professor do Senac de Desenvolvimento de Sistemas.</h1>
@@ -53,10 +53,10 @@
                 </div>
             </div>
 
-            <img class="area-imagem" src="./img/Escritório.png" alt="Area de Trabalho e Estudo">
+            <img class="imagem-principal" src="./img/Escritório.png" alt="Area de Trabalho e Estudo">
         </section>
 
-        <section class="minha-jornada">
+        <section class="minha-jornada" id="sobre">
 
             <div class="titulo">
                 <span>MINHA JORNADA</span>
@@ -120,7 +120,7 @@
 
         </section>
 
-          <section class="trabalhos-iniciais">
+          <section class="trabalhos-iniciais" id="projetos">
 
             <div class="titulo">
                 <span>TRABALHOS INICIAIS</span>
@@ -185,7 +185,7 @@
 
         </section>
 
-        <section class="area-ferramentas">
+        <section class="area-ferramentas" id="ferramentas">
             <div class="titulo">
                 <span>AMBIENTE DE TRABALHO</span>
                 <h2>Ferramentas no meu dia a dia</h2>
@@ -222,7 +222,39 @@
                 </div>
             </div>
         </section>
+
+        <section class="vamos-conversar" id="contato">
+            <i class="fa-regular fa-comment-dots"></i>
+            <h2>Vamos conversar?</h2>
+            <p>Quer trocar uma ideia sobre os estudos de front-end, dar dicas para uma iniciante ou simplesmente acompanhar meus projetos?</p>
+
+              <div class="area-contatos">
+                <div class="card-contato">
+                   <div id="forma-contato"><i class="fa-regular fa-envelope"></i>E-mail</div>
+                    <p>jocielalvesdejesus@gmail.com</p>
+                    <span id="link-contato"><i class="fa-regular fa-copy"></i> copiar e-mail</span>
+                </div>
+
+                <div class="card-contato">
+                   <div id="forma-contato"><i class="fa-brands fa-linkedin"></i></i>Linkedin</div>
+                   <p>jocieljesus</p>
+                    <a id="link-contato" href="//www.linkedin.com/in/jocieljesus/" target="_blank">conectar<span class="material-symbols-outlined">arrow_outward</span></a>
+                </div>
+
+                <div class="card-contato">
+                   <div id="forma-contato"><i class="fa-brands fa-github"></i>GitHub</div>
+                   <p>jocieljesus</p>
+                    <a id="link-contato" href="https:/z/github.com/jocieljesus" target="_blank">seguir perfil <span class="material-symbols-outlined"> arrow_outward</span></a>
+                </div>
+            </div>
+            
+
+        </section>
     </main>
     
+    <footer>
+        <p> Jociel - Primeiro Projeto HTML & CSS</p>
+        <p>&copy; 2026 Jociel. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>

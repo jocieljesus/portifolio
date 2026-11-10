@@ -37,12 +37,18 @@ header{
    justify-content: space-between;
    align-items: center;
    padding: 0 80px;
+   position: fixed;
+   width: 100%;
 }
 
 ul{
     display: flex;
     list-style: none;
     gap: 40px;
+}
+ul li :hover{
+    color: var(--cor-secundaria);
+    font-weight: 700;
 }
 
 a{
@@ -85,7 +91,7 @@ h1 {
     font-size: 1.3rem;
 }
 
-.area-imagem{
+.imagem-principal{
     width: 30vw;
     border-radius: 15px;
     box-shadow: 0 0 20px var(--cor-secundaria);
@@ -456,6 +462,8 @@ p {
     width: 350px;
     height: 350px;
     align-content: center;
+    border-radius: 20px;
+
 }
 
 .card-ferramentas i{
@@ -495,4 +503,93 @@ p {
 
 #icon-figma{
     color: var(--cor-icone-responsivo);
+}
+
+.vamos-conversar{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--cor-fundo);
+    padding: 100px;
+    border-radius: 20px;
+    width: 80%;
+    margin: 100px auto;
+    align-items: center;
+    box-shadow: 0 1px 3px var(--cor-texto-principal);
+}
+
+
+.vamos-conversar > i{
+    font-size: 4rem;
+    background-color: var(--cor-fundo-icone);
+    width: 100px;
+    height: 100px;
+    align-content: center;
+    border-radius: 20px;
+    color: var(--cor-secundaria);
+    margin-bottom: 20px;
+}
+
+
+.vamos-conversar h2{
+    font-size:2.7rem;
+}
+
+.vamos-conversar > p{
+    font-size: 1.4rem;
+    width: 90%;
+    text-align: center;
+}
+
+.card-contato{
+    background-color: var(--cor-fundo-icone);
+    width: 320px;
+    padding: 30px 10px;
+    border-radius: 10px;
+    margin-right: 15px;
+}
+
+.area-contatos{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+#forma-contato {
+    margin: 5px 0;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+}
+
+.card-contato p {
+    font-weight: 500;
+}
+
+#link-contato, #link-contato span{
+    color: gray;
+    font-weight: 400;
+}
+
+footer{
+    background-color: var(--cor-header);
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10vw;
+}
+
+#sobre{
+    scroll-margin-top: 80px
+}
+
+#projetos{
+    scroll-margin-top: 80px;
+}
+
+#ferramentas{
+    scroll-margin-top: 140px;
+}
+#contato{
+    scroll-margin-top:100px;
 }
