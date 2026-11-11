@@ -2,9 +2,9 @@
 
 :root{
 
-    --cor-principal: #F9F9FF;
+    --cor-principal: #e8e8f1;
     --cor-fundo: #FFFFFF;
-    --cor-header: #E9E9F9;
+    --cor-header: #dcdcff;
     --cor-texto-principal:  #464554;
     --cor-titulo-principal: #000000;
     --cor-secundaria: #4338CA;
@@ -365,6 +365,7 @@ p {
 }
 
 
+
 .area-imagem{
     width:100%;
     background-size: auto;
@@ -592,4 +593,238 @@ footer{
 }
 #contato{
     scroll-margin-top:100px;
+}
+
+
+
+@media (max-width:440px){
+
+    header{
+        flex-wrap: wrap;
+        height: 15vh;
+        padding: 5px 0;
+        justify-content: center;
+        column-gap: 100px;
+        
+    }
+
+    ul{
+        gap: 7px;
+        border-top: 2px solid var(--cor-secundaria);
+    }
+   
+    a{
+        font-size: 1rem;
+    }
+
+    main{
+        padding: 100px 12px 0 12px ;
+        
+    }
+
+    .icone-login{
+        order: -1;
+    }
+
+
+    .icone-login i{
+       margin-left: 0;
+    }
+    .logo{
+        order: -1;
+    }
+
+    .area-inicio{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h1, .nome-destaque{
+        font-size: 2rem;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    .area-texto p {
+        font-size: 1.1rem;
+        margin-top: 15px;
+    }
+
+    .botoes-iniciais{
+        display: flex;
+    }
+    .btn-ver-projetos{
+        flex: 1;
+        text-align: center;
+        justify-content: center;
+    }
+
+     .btn-github{
+        flex: 1;
+        text-align: center;
+        align-content: center;
+    }
+
+
+    .card-foco{
+        padding:5px;
+    }
+
+    .card-foco div p {
+        font-size: 1rem;
+    }
+
+       .card-foco div p span {
+        font-size: 1rem;
+    }
+    
+    .imagem-principal{
+        width: 95vw;
+        margin-top: 20px;
+
+    }
+
+
+    .cards{
+        flex-direction: column;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .card-html{
+        max-width: 100vw;
+        margin-top: 13px;
+    }
+
+    .barra-card{
+        margin-top: 25px;
+    }
+    .area-reflexao{
+        width: 100%;
+        padding: 10px;
+        
+    }
+    .area-reflexao h3{
+        font-size: 0.8rem;
+        width: 100%;
+        font-weight: 400;
+    }
+
+    .logo-autor{
+        font-size: 0.8rem;
+    }
+
+    .nome-autor h4, p{
+        font-size: 0.8rem;
+    }
+
+    .card-html-trabalhos h3, .card-html-trabalhos
+    p, .card-html-trabalhos .barra-card{
+        padding: 3px;
+    }
+
+    .card-html-trabalhos h3, .card-html-trabalhos
+    p, .card-html-trabalhos {
+        margin-top: 2px;
+    }
+
+    .card-html-trabalhos{
+        margin-bottom: 20px;
+    }
+
+   
+    .area-imagem span{
+       
+        font-size: 0.8rem;
+        padding: 5px 10px;
+        position: relative;
+        top: 5px;
+        left: 250px;
+    }
+    
+    
+    #demo-ao-vivo i{
+        margin-right: 4px;
+    }
+
+    #ver-codigo i{
+        margin-right: 4px;
+    }
+
+    .topo-card{
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+    .topo-card h3{
+        margin-top: 70px;
+    }
+
+    .cards-trabalhos{
+        margin-bottom: 20px;
+    }
+
+    .ferramentas{
+        padding: 0;
+        flex-wrap: wrap;
+    }
+
+    .card-ferramentas{
+        margin-bottom: 10px;
+        padding: 0px;
+        width: 180px;
+        height: 250px;
+
+    }
+
+    .card-ferramentas span{
+
+        padding: 0px 5px;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+
+    .card-ferramentas p{
+        margin-bottom: 5px;
+        font-size: 0.8rem;
+    }
+
+    .card-ferramentas h5{
+        font-size: 1rem;
+    }
+
+    .vamos-conversar h2{
+        font-size:1.5rem;
+    }
+    .vamos-conversar{
+        width: 100%;
+        padding: 20px;
+        margin: 30px auto;
+    }
+    .vamos-conversar p{
+        font-size: 1rem;
+        width: 100%;
+        
+        
+    }
+    .vamos-conversar > i{
+        font-size: 4rem;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .area-contatos{
+        flex-direction: column;
+         margin: 35px auto;
+         gap: 10px;
+
+    }
+
+    .card-contato{
+        width: 320px;
+        padding: 30px 10px;
+        border-radius: 10px;
+        margin: 0;
+    }
 }
