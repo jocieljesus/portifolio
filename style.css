@@ -27,7 +27,9 @@
 
 body{
     
-    background-color: var(--cor-principal)
+    background-color: var(--cor-principal);
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 header{
