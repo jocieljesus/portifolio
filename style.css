@@ -730,14 +730,15 @@ footer{
         margin-bottom: 20px;
     }
 
+    .area-imagem{
+        padding-top: 10px;
+    }
    
     .area-imagem span{
        
         font-size: 0.8rem;
         padding: 5px 10px;
-        position: relative;
-        top: 5px;
-        left: 250px;
+        margin-left: 240px;
     }
     
     
