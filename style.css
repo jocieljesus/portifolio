@@ -601,7 +601,7 @@ footer{
         padding: 5px 0;
         justify-content: center;
         column-gap: 100px;
-        
+        width: 100vw;
     }
 
     ul{
