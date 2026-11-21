@@ -85,6 +85,7 @@ main{
     width: 100%;
     min-width: 0;
     box-sizing: border-box;
+    margin-bottom: 10px;
  }
 
 
@@ -104,7 +105,7 @@ main{
 }
 
 .area-botao{
-    margin-top: 40px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -152,4 +153,29 @@ i{
     .area-senhas {
         flex-direction: column;
     }
+}
+
+
+.loading {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: girar 0.8s linear infinite;
+  vertical-align:middle;
+  margin-right: 8px;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Estilo visual para quando o botão estiver desativado */
+#btn-cadastrar:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
 }
