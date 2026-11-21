@@ -1,15 +1,21 @@
 @import url(style.css);
 
 main{
-    background-image: url(img/imagem-fundo-login.png);
+    background-image: url(../img/imagem-fundo-login.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 100vh;
+
     display: flex;
     justify-content: end;
     align-items: center;
     color: var(--cor-secundaria);
+
+    max-width: 100%;
+    margin: 0;
+    padding: 40px 5vw;
+    min-height: 100vh;
+
 }
 
 .logo-login{
@@ -20,17 +26,22 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2.5rem;
-    border-radius: 100%;
-    margin: 0 auto;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 0 auto 15px;
 }
 
 #area-login, #area-cadastro{
     box-shadow:  0 5px 20px var(--cor-secundaria);
     border-radius: 20px;
     background:#dee8ff9c;
-    width: 30vw;
-    height: 70vh;
+    backdrop-filter: blur(6px);
+
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    padding: 40px 80px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -40,17 +51,16 @@ main{
 
 
 #area-cadastro{
-    width: 35vw;
-    height: 80vh;
+    max-width: 700px;
 }
 
 .area-titulo{
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 24px;
 }
 
 .area-titulo h1 {
-    font-size: 2.5rem;
+    font-size:  clamp(1.8rem, 2.5vw, 2.5rem)
 }
 
 
@@ -59,33 +69,46 @@ main{
     flex-direction: column;
     gap: 5px;
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
 }
 
 
 .area-senhas{
-    display: flex;
-    gap: 20px;
-    width: 80%;
-    box-sizing: border-box;
-
-}
- .area-senha-cadastro input, .area-confirma-senha input{
-
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
     width: 100%;
+}
+
+
+ .area-senhas input{
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
  }
 
 
+ .lembrar-senha a{
+    margin-left: 100px;
+ }
 
-.lembrar-senha a {
-    margin-left: 80px;
+
+.lembrar-senha {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 5px;
 }
 
 .area-botao{
-    margin-top: 50px;
+    margin-top: 40px;
     display: flex;
     flex-direction: column;
-    width: 80%;
+    width: 100%;
+    justify-content: center;
 }
 
 input, button{
@@ -108,6 +131,7 @@ label{
 
 a{
     color: var(--cor-secundaria);
+    text-align: center;
 }
 
 a:hover{
@@ -116,4 +140,16 @@ a:hover{
 
 i{
     font-size: 5rem;
+}
+
+
+@media (max-width: 768px) {
+    main {
+        justify-content: center;
+        padding: 20px;
+    }
+
+    .area-senhas {
+        flex-direction: column;
+    }
 }
